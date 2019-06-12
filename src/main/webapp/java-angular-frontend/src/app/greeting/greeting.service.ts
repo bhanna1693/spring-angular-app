@@ -11,7 +11,7 @@ export class GreetingService {
     private http: HttpClient
   ) { }
 
-  getGreeting(){
-    return this.http.get(environment.apiURL + '/greeting');
+  getGreeting(name?: any){
+    return this.http.get(environment.apiURL + '/greeting', name);
   }
 }

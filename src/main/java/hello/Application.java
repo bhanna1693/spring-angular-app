@@ -12,12 +12,12 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurer() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/greeting").allowedOrigins("http://localhost:4200");
-            }
-        };
-    }
+//    public WebMvcConfigurer corsConfigurer() {
+//        return new WebMvcConfigurer() {
+//            @Override
+//            public void addCorsMappings(CorsRegistry registry) {
+//                registry.addMapping("/api/greeting").allowedOrigins("http://localhost:4200");
+//            }
+//        };
+//    }
 }

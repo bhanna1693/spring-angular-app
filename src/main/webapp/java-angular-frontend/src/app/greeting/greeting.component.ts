@@ -23,6 +23,7 @@ export class GreetingComponent implements OnInit {
       this.name = params["name"];
       this.greetingService.getGreeting(this.name).subscribe((res: any) => {
         this.greeting = res.content;
+        console.log(this.greeting);
       });
     });
 
